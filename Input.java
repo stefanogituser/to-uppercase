@@ -1,0 +1,6 @@
+
+
+interface Input {
+    String fetch();
+    
+}

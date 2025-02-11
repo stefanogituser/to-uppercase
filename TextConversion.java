@@ -1,9 +1,11 @@
 public class TextConversion {
     private Input input;
+    private Output output;
 
     // This is where we inject the dependency
-    public TextConversion(final Input input){
+    public TextConversion(final Input input, final Output outpu){
         this.input = input;
+        this.output = output;
     }
 
     public void showInputInUpperCase(){
@@ -13,6 +15,6 @@ public class TextConversion {
         String upperCaseText = inputText.toUpperCase();
 
         // Display
-        System.out.println(upperCaseText);
+        output.display(upperCaseText);
     }
 }
